@@ -1,0 +1,99 @@
+body
+{
+    display: inline;
+background-color: rgb(253, 253, 253);
+}
+.college
+{
+    font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    font-size: 250%;
+    font-weight: 900;
+    text-align: center;
+    color: #2370ff;
+
+}
+.title{
+    color: rgb(50, 53, 211);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 150%;
+    font-weight: 900;
+    margin-top:2%;
+    text-align: center;
+}
+.PRESIDENT
+{
+    display:flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100%;
+    font-weight: 900;
+    margin-top:2%;
+    margin-left:40%;
+}
+.pre-sel
+{
+    display:flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100%;
+    font-weight: 900;
+    margin-top:-1%;
+    margin-left:50%; 
+}
+.SECRETARY
+{
+    display:flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100%;
+    font-weight: 900;
+    margin-top:2%;
+    margin-left:40%;
+}
+.sec-sel
+{
+    display:flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100%;
+    font-weight: 900;
+    margin-top:-1%;
+    margin-left:50%; 
+}
+.VICE-PRESIDENT
+{
+    display:flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100%;
+    font-weight: 900;
+    margin-top:2%;
+    margin-left:39%;
+}
+.pre-sel
+{
+    display:flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    font-weight: 900;
+    margin-top:-1%;
+    margin-left:50%; 
+;
+}
+.VICE-SECRETARY
+{
+    display:flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100%;
+    font-weight: 900;
+    margin-top:2%;
+    margin-left:39%;
+}
+.option
+{
+    font-family: 'Courier New', Courier, monospace;
+}
+.sub
+{
+    margin-top: 2%;
+    margin-left:50%;
+    font-family: cursive;
+    border: 10px;
+    
+}
+
