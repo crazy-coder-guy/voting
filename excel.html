@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <table align="center">
+    <form name="submit-to-google-sheet">
+<div class="title">
+        <tr><td>ASSOCIATION OF COMPUTER APPLICATION AND INTELLECTUALS</td></tr></div>
+</table>
+        <!--------------------------------------------------------------------------->
+        <table align="center">
+        <div class="PRESIDENT">
+            <tr>
+            <td><label>PRESIDENT</label></td></div>
+            <div class="pre-sel">
+            <td><select name="PRESIDENT" id="president-select">
+                <option value=""></option>
+                <option value="RAGUL">RAGUL</option>
+                <option value="DEEPAK">DEEPAK</option>
+                <option value="SHYLESH">SHYLESH</option>
+                <option value="VIJENDRAN">VIJENDRAN</option>
+                <option value="SANDHIYA">SANDHIYA</option>
+                <option value="YASMIN FATHIMA">YASMIN FATHIMA</option>
+                <option value="SONAMITHRA">SONAMITHRA</option>
+            </select></td>
+        </tr></div>
+<!--------------------------------------------------------------------------------------------------------->
+<div class="SECRETARY">
+    <tr>
+    <td><label>SECRETARY</label></td></div>
+    <div class="sec-sel">
+    <td><select name="SECRETARY" id="president-select">
+        <option value=""></option>
+        <option value="RAGUL">RAGUL</option>
+        <option value="DEEPAK">DEEPAK</option>
+        <option value="SHYLESH">SHYLESH</option>
+        <option value="VIJENDRAN">VIJENDRAN</option>
+        <option value="SANDHIYA">SANDHIYA</option>
+        <option value="YASMIN FATHIMA">YASMIN FATHIMA</option>
+        <option value="SONAMITHRA">SONAMITHRA</option>
+    </select></td>
+</tr></div>
+<!---------------------------------------------------------------------------------------------------------->
+<div class="VICE-PRESIDENT">
+    <tr>
+    <td><label>VICE-PRESIDENT</label></td></div>
+    <div class="pre-sel">
+    <td><select name="VICE PRESIDENT" id="president-select">
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+
+    </select></td>
+</tr></div>
+<!---------------------------------------------------------------------------------------------------------->
+<div class="VICE-SECRETARY">
+    <tr>
+    <td><label>VICE-SECRETARY</label></td></div>
+    <div class="sec-sel">
+    <td><select name="VICE SECRETARY" id="president-select">
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+    </select></td>
+</tr></div>
+<!----------------------------------------------------------------------------------------------------->
+
+<div class="sub"> 
+    <tr>
+    <td><input type="submit" name="Submit">
+        <span id="success"></span></td>
+</tr>
+</div>
+<!----------------------------------------------------------------------------------------------------->
+    </form>
+</table>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx6x_bjjp-8i_0DGTRMH-dmkehDzaAZp6Yo31kGRM-O_Egui6_z34bTII3vOCxYVi0/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const success=document.getElementById('success');
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {success.innerHTML ="data successfully submit";})
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+</body>
+</html>
